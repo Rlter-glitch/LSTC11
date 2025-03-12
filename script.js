@@ -42,7 +42,7 @@ const questions = [
   {
     question: "Câu 9: Cuối thế kỉ XIX, ở Đông Nam Á phong trào đấu tranh theo ý thức hệ phong kiến dần được thay thế bằng phong trào đấu tranh theo xu hướng nào sau đây?",
     options: ["a) Vô sản.", "b) Tư sản.", "c) Li khai.", "d) Cực đoan."],
-    correct: "a"
+    correct: "bb"
   },
   {
     question: "Câu 10: Sau Chiến tranh thế giới thứ nhất, tại Đông Nam Á, Đảng Cộng sản nước nào được thành lập sớm nhất?",
@@ -67,7 +67,7 @@ const questions = [
   {
     question: "Câu 14: Sau Chiến tranh thế giới thứ hai, những quốc gia nào ở Đông Nam Á giành và tuyên bố độc lập dưới sự lãnh đạo của Đảng Cộng sản?",
     options: ["a) Việt Nam và Lào.", "b) Lào và In-đô-nê-xi-a.", "c) Việt Nam, Lào và In-đô-nê-xi-a.", "d) Mianma, Việt Nam, Malaixia."],
-    correct: "c"
+    correct: "a"
   },
   {
     question: "Câu 15: Trước khi giành độc lập, Xin-ga-po là thuộc địa của nước nào sau đây?",
@@ -437,7 +437,7 @@ const questions = [
       "c) Nhà Đường.",
       "d) Nhà Minh."
     ],
-    correct: "a"
+    correct: "b"
   },
   {
     question: "Câu 55: Cuộc khởi nghĩa của Bà Triệu (năm 248) đã?",
