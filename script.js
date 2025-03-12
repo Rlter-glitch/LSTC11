@@ -25,6 +25,11 @@ const questions = [
     correct: "b"
   },
   {
+    question: "Câu 6: Thế kỉ XIX, nhân dân Miến Điện đấu tranh chống thức dân Anh với hình thức chủ yếu nào sau đây?",
+    options: ["a) Bất hợp tác.", "b) Chiến tranh du kích.", "c) Đấu tranh đòi quyền tự trị.", "d) Thỏa hiệp cới chính quyền thực dân."],
+    correct: "b"
+  },
+  {
     question: "Câu 7: Năm 1858, Pháp tiến hành xâm lược Việt Nam bằng kế hoạch chiến tranh nào sau đây?",
     options: ["a) \"Đánh nhanh, thắng nhanh\".", "b) \"Chinh phục từng gói nhỏ\".", "c) \"Tràn ngập lãnh thổ\".", "d) \"Chiến tranh tổng lực\"."],
     correct: "a"
