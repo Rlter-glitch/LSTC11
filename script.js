@@ -42,7 +42,7 @@ const questions = [
   {
     question: "Câu 9: Cuối thế kỉ XIX, ở Đông Nam Á phong trào đấu tranh theo ý thức hệ phong kiến dần được thay thế bằng phong trào đấu tranh theo xu hướng nào sau đây?",
     options: ["a) Vô sản.", "b) Tư sản.", "c) Li khai.", "d) Cực đoan."],
-    correct: "bb"
+    correct: "b"
   },
   {
     question: "Câu 10: Sau Chiến tranh thế giới thứ nhất, tại Đông Nam Á, Đảng Cộng sản nước nào được thành lập sớm nhất?",
