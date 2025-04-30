@@ -461,11 +461,8 @@ const questions = [
   }
 ];
 
-// Hàm để chèn câu hỏi và các lựa chọn vào form quiz
-function loadQuiz() {
-  const form = document.getElementById('quizForm');
+const form = document.getElementById('quizForm');
   questions.forEach((question, index) => {
-    console.log(question); // In ra để kiểm tra
     const questionDiv = document.createElement('div');
     questionDiv.classList.add('question');
     
