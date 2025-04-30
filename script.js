@@ -1,453 +1,463 @@
 const questions = [
   {
-    question: "Câu 1: Trong các thế kỷ XVI – XIX, phong trào đấu tranh chống thực dân xâm lược bùng nổ sớm ở những quốc gia Đông Nam Á nào sau đây?",
-    options: ["a) In-đô-nê-xi-a và Miến Điện.", "b) In-đô-nê-xi-a và Phi-líp-pin.", "c) Việt Nam và Lào.", "d) Mã Lai và Phi-líp-pin."],
-    correct: "b"
-  },
-  {
-    question: "Câu 2: Từ thế kỉ XVI đến thế kỉ XIX, nhân dân In-đô-nê-xi-a đấu tranh chống lại nước thực dân nào sau đây?",
-    options: ["a) Hà Lan.", "b) Tây Ban Nha.", "c) Anh.", "d) Pháp."],
-    correct: "a"
-  },
-  {
-    question: "Câu 3: Từ giữa thế kỷ XVI đến cuối thế kỷ XIX, nhân dân Phi-líp-pin đấu tranh chống lại nước thực dân nào sau đây?",
-    options: ["a) Tây Ban Nha.", "b) Bồ Đào Nha.", "c) Mĩ.", "d) Hà Lan."],
-    correct: "a"
-  },
-  {
-    question: "Câu 4: Năm 1945, quốc gia giành độc lập sớm nhất ở Đông Nam Á là",
-    options: ["a) In-đô-nê-xi-a.", "b) Lào.", "c) Campuchia.", "d) Việt Nam."],
-    correct: "a"
-  },
-  {
-    question: "Câu 5: Từ nửa sau thế kỉ XIX, các nước Đông Dương trở thành thuộc địa của nước thực dân nào sau đây?",
-    options: ["a) Anh.", "b) Pháp.", "c) Hà Lan.", "d) Tây Ban Nha."],
-    correct: "b"
-  },
-  {
-    question: "Câu 6: Thế kỉ XIX, nhân dân Miến Điện đấu tranh chống thức dân Anh với hình thức chủ yếu nào sau đây?",
-    options: ["a) Bất hợp tác.", "b) Chiến tranh du kích.", "c) Đấu tranh đòi quyền tự trị.", "d) Thỏa hiệp cới chính quyền thực dân."],
-    correct: "b"
-  },
-  {
-    question: "Câu 7: Năm 1858, Pháp tiến hành xâm lược Việt Nam bằng kế hoạch chiến tranh nào sau đây?",
-    options: ["a) \"Đánh nhanh, thắng nhanh\".", "b) \"Chinh phục từng gói nhỏ\".", "c) \"Tràn ngập lãnh thổ\".", "d) \"Chiến tranh tổng lực\"."],
-    correct: "a"
-  },
-  {
-    question: "Câu 8: Cuộc khởi nghĩa của nhân dân Campuchia chống thực dân Pháp trong những năm 1863-1866 do ai lãnh đạo?",
-    options: ["a) Pu-côm-bô.", "b) A-cha Xoa.", "c) Com-ma-đam.", "d) Si-vô-tha."],
-    correct: "b"
-  },
-  {
-    question: "Câu 9: Cuối thế kỉ XIX, ở Đông Nam Á phong trào đấu tranh theo ý thức hệ phong kiến dần được thay thế bằng phong trào đấu tranh theo xu hướng nào sau đây?",
-    options: ["a) Vô sản.", "b) Tư sản.", "c) Li khai.", "d) Cực đoan."],
-    correct: "b"
-  },
-  {
-    question: "Câu 10: Sau Chiến tranh thế giới thứ nhất, tại Đông Nam Á, Đảng Cộng sản nước nào được thành lập sớm nhất?",
-    options: ["a) Việt Nam.", "b) Mã Lai.", "c) Phi-líp-pin.", "d) In-đô-nê-xi-a."],
-    correct: "d"
-  },
-  {
-    question: "Câu 11: Trong những năm 1930-1951, cách mạng Đông Dương đặt dưới sự lãnh đạo của",
-    options: ["a) Đảng cộng sản Việt Nam.", "b) Đảng Lao động Việt Nam.", "c) Đảng cộng sản Đông Dương.", "d) Đảng Nhân dân cách mạng Lào."],
-    correct: "c"
-  },
-  {
-    question: "Câu 12: Năm 1945, những quốc gia nào ở Đông Nam Á tuyên bố độc lập?",
-    options: ["a) In-đô-nê-xi-a, Việt Nam, Lào.", "b) In-đô-nê-xi-a, Việt Nam, Cam-pu-chia.", "c) In-đô-nê-xi-a, Việt Nam, Phi-lip-pin.", "d) In-đô-nê-xi-a, Việt Nam, Ma-lai-xi-a."],
-    correct: "a"
-  },
-    {
-    question: "Câu 13: Trong giai đoạn 1954-1975, nhân dân ba nước Đông Dương đấu tranh chống kẻ thù chung là",
-    options: ["a) thực dân Pháp.", "b) đế quốc Mĩ.", "c) thực dân Anh.", "d) thực dân Hà Lan."],
-    correct: "b"
-  },
-  {
-    question: "Câu 14: Sau Chiến tranh thế giới thứ hai, những quốc gia nào ở Đông Nam Á giành và tuyên bố độc lập dưới sự lãnh đạo của Đảng Cộng sản?",
-    options: ["a) Việt Nam và Lào.", "b) Lào và In-đô-nê-xi-a.", "c) Việt Nam, Lào và In-đô-nê-xi-a.", "d) Mianma, Việt Nam, Malaixia."],
-    correct: "a"
-  },
-  {
-    question: "Câu 15: Trước khi giành độc lập, Xin-ga-po là thuộc địa của nước nào sau đây?",
-    options: ["a) Mĩ.", "b) Hà Lan.", "c) Pháp.", "d) Anh."],
-    correct: "d"
-  },
-  {
-    question: "Câu 16: Trước chiến tranh thế giới thứ hai (1939-1945), các nước Việt Nam, Lào, Campuchia đều là thuộc địa của",
-    options: ["a) Pháp.", "b) Mĩ.", "c) Anh.", "d) Hà Lan."],
-    correct: "a"
-  },
-  {
-    question: "Câu 17: Sau chiến tranh thế giới thứ hai, một số nước Đông Nam Á bắt đầu quá trình tái thiết đất nước nhằm mục đích nào sau đây?",
-    options: ["a) Khắc phục hậu quả chiến tranh và các tàn dư của thời kì thuộc địa.", "b) Liên minh với các nước phương Tây để tranh thủ viện trợ.", "c) Nỗ lực trở thành ủy viên thường trực của Hội đồng bảo an.", "d) Đưa đất nước phát triển thành các cường quốc quân sự hàng đầu."],
-    correct: "a"
-  },
-  {
-    question: "Câu 18: Thời kì đầu sau khi độc lập, nhóm các nước sáng lập ASEAN đã thực hiện chính sách phát triển nào sau đây?",
-    options: ["a) Công nghiệp hóa thay thế nhập khẩu.", "b) Công nghiệp hóa hướng tới xuất khẩu.", "c) Công nghiệp hóa xã hội chủ nghĩa.", "d) Cải cách và mở cửa."],
-    correct: "a"
-  },
-  {
-    question: "Câu 19: Trong những năm 70 của thế kỉ XX, nhóm 5 nước sáng lập ASEAN đã thực hiện chính sách kinh tế nào sau đây?",
-    options: ["a) Công nghiệp hóa hướng tới xuất khẩu.", "b) Chiến lược kinh tế hướng nội.", "c) Xây dựng kinh tế thị trường.", "d) Chính sách láng giềng thân thiện."],
-    correct: "a"
-  },
-  {
-    question: "Câu 20: Tháng 12-1986, Đảng cộng sản Việt Nam đã quyết định thực hiện",
-    options: ["a) đường lối đổi mới.", "b) xây dựng nền kinh tế tập trung.", "c) trưng thu lương thực thừa.", "d) chính sách bế quan tỏa cảng."],
-    correct: "a"
-  },
-  {
-    question: "Câu 21: Chiến tranh bảo vệ Tổ quốc có vai trò quan trọng",
+    question: "Câu 1. Lãnh đạo phong trào nông dân Tây Sơn cuối thế kỉ XVIII là",
     options: [
-      "a) trong việc hình thành và nâng cao lòng tự hào dân tộc.",
-      "b) trong việc hình thành và phát triển truyền thống yêu nước.",
-      "c) đối với sự sinh tồn và phát triển của dân tộc Việt Nam.",
-      "d) khơi dậy và củng cố tinh thần đoàn kết, lòng tự hào dân tộc."
+      "A. Nguyễn Nhạc, Nguyễn Huệ, Nguyễn Ánh.",
+      "B. Nguyễn Lữ, Nguyễn Ánh, Nguyễn Huệ.",
+      "C. Nguyễn Nhạc, Nguyễn Huệ, Nguyễn Lữ.",
+      "D. Nguyễn Trãi, Nguyễn Huệ, Nguyễn Ánh."
     ],
-    correct: "c"
+    correct: "C"
   },
   {
-    question: "Câu 22: Trận quyết chiến trong cuộc kháng chiến chống quân xâm lược Nam Hán năm 938 là trận",
+    question: "Câu 2. Thắng lợi của cuộc khởi nghĩa nào sau đây đã đưa đến sự thành lập vương triều Lê sơ?",
     options: [
-      "a) Bạch Đằng.",
-      "b) Như Nguyệt.",
-      "c) Bình Lệ Nguyên.",
-      "d) Rạch Gầm - Xoài Mút."
+      "A. Khởi nghĩa Lý Bí.",
+      "B. Khởi nghĩa Lam Sơn.",
+      "C. Khởi nghĩa Phùng Hưng.",
+      "D. Khởi nghĩa Hai Bà Trưng."
     ],
-    correct: "a"
+    correct: "B"
   },
   {
-    question: "Câu 23: Trận quyết chiến trong cuộc kháng chiến chống quân xâm lược Tống thời Lý là",
+    question: "Câu 3. Lãnh đạo cuộc khởi nghĩa Lam Sơn là",
     options: [
-      "a) trận Bạch Đằng.",
-      "b) trận Như Nguyệt.",
-      "c) trận Ngọc Hồi - Đống Đa.",
-      "d) trận Rạch Gầm - Xoài Mút."
+      "A. Nguyễn Trãi.",
+      "B. Lê Lợi.",
+      "C. Lê Lai.",
+      "D. Đinh Liệt."
     ],
-    correct: "b"
+    correct: "B"
   },
   {
-    question: "Câu 24: Trận quyết chiến trong cuộc kháng chiến chống quân xâm lược Thanh năm 1789 là",
+    question: "Câu 4. Năm 1407, sau khi cuộc kháng chiến của nhà Hồ thất bại, nước ta rơi vào ách thống trị của triều đại phong kiến Trung Quốc nào sau đây?",
     options: [
-      "a) trận Bạch Đằng.",
-      "b) trận Như Nguyệt.",
-      "c) trận Ngọc Hồi - Đống Đa.",
-      "d) trận Rạch Gầm - Xoài Mút."
+      "A. Nhà Hán.",
+      "B. Nhà Đường.",
+      "C. Nhà Minh.",
+      "D. Nhà Tống."
     ],
-    correct: "c"
+    correct: "C"
   },
   {
-    question: "Câu 25: Lãnh đạo cuộc kháng chiến chống quân xâm lược Nam Hán năm 938 là",
+    question: "Câu 5. Khởi nghĩa Lam Sơn (1418 - 1427) nổ ra trong bối cảnh nào sau đây?",
     options: [
-      "a) Ngô Quyền.",
-      "b) Trần Hưng Đạo.",
-      "c) Lê Lợi.",
-      "d) Quang Trung - Nguyễn Huệ."
+      "A. Nhà Hồ tiến hành cải cách đất nước thành công.",
+      "B. Nhà Trần khủng hoảng, suy yếu trầm trọng.",
+      "C. Nhà Minh thi hành chính sách cai trị hà khắc.",
+      "D. Nhà Minh lâm vào khủng hoảng, suy yếu."
     ],
-    correct: "a"
+    correct: "C"
   },
   {
-    question: "Câu 26: Lãnh đạo cuộc kháng chiến chống quân xâm lược Xiêm và Thanh cuối thế kỉ XVIII là",
+    question: "Câu 6. Sau khi đánh đổ chính quyền chúa Nguyễn, một nhiệm vụ đặt ra cho phong trào Tây Sơn là",
     options: [
-      "a) Ngô Quyền.",
-      "b) Trần Hưng Đạo.",
-      "c) Lê Lợi.",
-      "d) Nguyễn Huệ - Quang Trung."
+      "A. tiến quân ra Bắc, phối hợp với vua Lê đánh đổ chúa Trịnh.",
+      "B. tiến quân ra Bắc tiêu diệt 29 vạn quân Thanh xâm lược.",
+      "C. tiến ra Bắc đánh đổ chính quyền Lê - Trịnh, thống nhất đất nước.",
+      "D. tiến ra bắc phối hợp với chúa Trịnh lật đổ vua Lê."
     ],
-    correct: "d"
+    correct: "C"
   },
   {
-    question: "Câu 27: Cuộc kháng chiến chống quân Triệu xâm lược năm 179 TCN thất bại đã dẫn đến sự sụp đổ của nhà nước",
+    question: "Câu 7. Một trong những đóng góp to lớn của phong trào Tây Sơn (1771-1802) đối với lịch sử dân tộc Việt Nam là",
     options: [
-      "a) Văn Lang.",
-      "b) Âu Lạc.",
-      "c) Vạn Xuân.",
-      "d) Nam Việt."
+      "A. lật đổ ách đô hộ tàn bạo của nhà Minh ở Việt Nam.",
+      "B. thống nhất hoàn toàn đất nước về mặt nhà nước.",
+      "C. đánh tan quân xâm lược, bảo vệ nền độc lập dân tộc.",
+      "D. ngăn chặn được nguy cơ Pháp xâm lược Việt Nam."
     ],
-    correct: "b"
+    correct: "C"
   },
   {
-    question: "Câu 28: Các cuộc kháng chiến chống ngoại xâm trong lịch sử dân tộc Việt Nam thắng lợi là do",
+    question: "Câu 8. Sau khi đánh bại quân Thanh xâm lược (1789), chính quyền của vua Quang Trung đã",
     options: [
-      "a) kẻ thù chủ quan, không có tổ chức chặt chẽ.",
-      "b) tương quan lực lượng chênh lệch, địch có quân số ít hơn ta.",
-      "c) địch thiếu những tướng chỉ huy tài năng, nhiều kinh nghiệm.",
-      "d) Nhân dân Việt Nam yêu nước, đoàn kết kháng chiến."
+      "A. đặt kinh đô ở Nghệ An, kiểm soát toàn bộ Đàng Trong và Đàng Ngoài cũ.",
+      "B. đánh bại tập đoàn vua Lê – chúa Trịnh ở Đàng Ngoài, thống nhất đất nước.",
+      "C. đóng đô ở Phú Xuân, kiểm soát phía bắc Đàng Trong và toàn bộ Đàng Ngoài cũ.",
+      "D. xây dựng kinh thành ở Huế, kiểm soát toàn bộ Đàng Trong và Đàng Ngoài."
     ],
-    correct: "d"
+    correct: "C"
   },
   {
-    question: "Câu 29: Một trong những cuộc kháng chiến không thành công của dân tộc Việt Nam trước Cách mạng tháng Tám năm 1945 là",
+    question: "Câu 9. Nội dung nào sau đây phản ánh đúng ý nghĩa thắng lợi của khởi nghĩa Lam Sơn?",
     options: [
-      "a) kháng chiến chống Thanh của nhà Tây Sơn (1789).",
-      "b) kháng chiến chống quân Tống thời thời Lý (1075-1077).",
-      "c) kháng chiến chống thực dân Pháp của nhà Nguyễn (1858 - 1884).",
-      "d) kháng chiến chống quân Nam Hán của Ngô Quyền (938)."
+      "A. Đập tan quân xâm lược Xiêm và Thanh, bảo vệ độc lập dân tộc.",
+      "B. Kết thúc 20 năm nhà Minh đô hộ, mở ra thời kì mới của đất nước.",
+      "C. Xóa bỏ ranh giới chia cắt đất nước, đặt cơ sở thống nhất quốc gia.",
+      "D. Đưa Đại Việt trở thành cường quốc hàng đầu khu vực Đông Nam Á."
     ],
-    correct: "c"
+    correct: "B"
   },
   {
-    question: "Câu 30: Một trong những nguyên nhân khiến trong suốt chiều dài lịch sử, dân tộc Việt Nam phải luôn đối phó với nhiều thế lực ngoại xâm để bảo vệ nền độc lập dân tộc là gì?",
+    question: "Câu 10. Cuộc khởi nghĩa Lam Sơn (1418-1427) thắng lợi đã",
     options: [
-      "a) Việt Nam là cầu nối giữa châu Á, Âu, và Thái Bình Dương.",
-      "b) Việt Nam là cầu nối giữa châu Á và Thái Bình Dương.",
-      "c) Việt Nam có đường giao thương với hầu hết các nước trên biển Đông.",
-      "d) Việt Nam là cầu nối giữa Đông Nam Á lục địa và Đông Nam Á hải đảo."
+      "A. chấm dứt vĩnh viễn ách đô hộ ngàn năm Bắc thuộc.",
+      "B. chấm dứt mọi cuộc chiến tranh xâm lược từ Trung Quốc.",
+      "C. mở đầu thời kì độc lập, tự chủ lâu dài cho dân tộc.",
+      "D. đập tan âm mưu thủ tiêu văn hóa Đại Việt của Trung Quốc."
     ],
-    correct: "d"
+    correct: "D"
   },
   {
-    question: "Câu 31: Ai là người lãnh đạo cuộc kháng chiến chống Tống trên sông Bạch Đằng?",
+    question: "Câu 11. Năm 1400, Hồ Quý Ly buộc vua Trần nhường ngôi và lập ra triều đại",
     options: [
-      "a) Lý Thường Kiệt.",
-      "b) Lê Hoàn.",
-      "c) Ngô Quyền.",
-      "d) Trần Quốc Tuấn."
+      "A. nhà Lê sơ.",
+      "B. nhà Nguyễn.",
+      "C. nhà Hồ.",
+      "D. nhà Lý."
     ],
-    correct: "b"
+    correct: "C"
   },
   {
-    question: "Câu 32: Năm 1075 - 1077, Lý Thường Kiệt đánh tan quân Tống ở phòng tuyến trên dòng sông",
+    question: "Câu 12. Sau khi lên ngôi và lập ra nhà Hồ, Hồ Quý Ly đã tiếp tục",
     options: [
-      "a) Bạch Đằng.",
-      "b) Rạch Gầm.",
-      "c) Thu Bồn.",
-      "d) Như Nguyệt."
+      "A. tổ chức kháng chiến chống quân Xiêm.",
+      "B. tổ chức kháng chiến chống quân Thanh.",
+      "C. mở rộng lãnh thổ về phía Nam.",
+      "D. tiến hành cuộc cải cách sâu rộng."
     ],
-    correct: "d"
+    correct: "D"
   },
   {
-    question: "Câu 33: Trận đánh tiêu biểu của quân dân nhà Trần trong cuộc kháng chiến chống quân Mông Cổ xâm lược (năm 1258) là",
+    question: "Câu 13. Về kinh tế - xã hội, nhằm hạn chế sự phát triển của chế độ sở hữu ruộng đất lớn trong các điền trang, thái ấp của quý tộc, Hồ Quý Ly đã",
     options: [
-      "a) Đông Bộ Đầu.",
-      "b) sông Bạch Đằng.",
-      "c) Chi Lăng - Xương Giang.",
-      "d) Đống Đa."
+      "A. cho phát hành tiền giấy.",
+      "B. ban hành chính sách hạn điền.",
+      "C. cải cách chế độ giáo dục.",
+      "D. thống nhất đơn vị đo lường."
     ],
-    correct: "a"
+    correct: "B"
   },
   {
-    question: "Câu 34: Những trận đánh tiêu biểu trong cuộc kháng chiến chống quân Nguyên xâm lược (năm 1285) là",
+    question: "Câu 14. Trong cải cách của Hồ Quý Ly, việc quy định số lượng gia nô được sở hữu của các vương hầu, quý tộc, quan lại được gọi là",
     options: [
-      "a) Tây Kết, Hàm Tử, Bạch Đằng.",
-      "b) Tây Kết, Hàm Tử, Như Nguyệt.",
-      "c) Tây Kết, Hàm Tử, Chương Dương.",
-      "d) Chương Dương, Hàm Tử, Đống Đa."
+      "A. phép hạn gia nô.",
+      "B. chính sách hạn điền.",
+      "C. chính sách quân điền.",
+      "D. bình quân gia nô."
     ],
-    correct: "c"
+    correct: "A"
   },
   {
-    question: "Câu 35: Vị tướng nào đã chỉ huy trận Bạch Đằng năm 1288 chống quân xâm lược Nguyên?",
+    question: "Câu 15. Xây dựng nhiều thành luỹ kiên cố, chế tạo súng thần cơ, đóng thuyền chiến là nội dung cải cách của Hồ Quý Ly và triều Hồ về",
     options: [
-      "a) Trần Thái Tông.",
-      "b) Trần Nhân Tông.",
-      "c) Trần Thủ Độ.",
-      "d) Trần Quốc Tuấn."
+      "A. kinh tế.",
+      "B. văn hoá.",
+      "C. quân sự.",
+      "D. xã hội."
     ],
-    correct: "d"
+    correct: "C"
   },
   {
-    question: "Câu 36: Trận đánh tiêu biểu trong cuộc kháng chiến chống quân Xiêm xâm lược (năm 1785) là",
+    question: "Câu 16. Hạn chế sự phát triển của Phật giáo, chấn chỉnh lại chế độ thi cử, đề cao chữ Nôm là nội dung cải cách của Hồ Quý Ly và triều Hồ về",
     options: [
-      "a) trận Rạch Gầm - Xoài Mút.",
-      "b) trận Bạch Đằng.",
-      "c) trận Như Nguyệt.",
-      "d) trận Ngọc hồi – Đống Đa."
+      "A. kinh tế, xã hội.",
+      "B. văn hoá, giáo dục.",
+      "C. chính trị, quân sự.",
+      "D. hành chính, pháp luật."
     ],
-    correct: "a"
+    correct: "B"
   },
   {
-    question: "Câu 37: Trận Ngọc Hồi - Đống Đa là trận đánh tiêu biểu của quân và dân ta trong cuộc kháng chiến chống lại quân xâm lược",
+    question: "Câu 17. Cuộc cải cách của Hồ Quý Ly và triều Hồ đã đề cao tư tưởng, tôn giáo nào sau đây?",
     options: [
-      "a) Minh.",
-      "b) Thanh.",
-      "c) Nguyên.",
-      "d) Xiêm."
+      "A. Phật giáo.",
+      "B. Đạo giáo.",
+      "C. Nho giáo.",
+      "D. Thiên chúa giáo."
     ],
-    correct: "b"
+    correct: "C"
   },
   {
-    question: "Câu 38: Kế sách “Tiên phát chế nhân” đã được triều đại nào sử dụng để chống lại quân xâm lược nào",
+    question: "Câu 18. Trong cải cách về văn hoá, Hồ Quý Ly khuyến khích và đề cao chữ viết nào sau đây?",
     options: [
-      "a) Tiền Lê - quân Tống.",
-      "b) Nhà Lý - quân Tống.",
-      "c) Nhà Trần - quân Nguyên.",
-      "d) Hậu Lê - quân Minh."
+      "A. Chữ Nôm.",
+      "B. Chữ Hán.",
+      "C. Chữ Latinh.",
+      "D. Chữ Quốc ngữ."
     ],
-    correct: "b"
+    correct: "A"
   },
   {
-    question: "Câu 39: Trong cuộc kháng chiến chống quân xâm lược Thanh, vua Quang Trung đã sử dụng chiến thuật quân sự nào?",
+    question: "Câu 19. Trong phương thức tuyển chọn quan lại, Hồ Quý Ly và nhà Hồ tăng cường",
     options: [
-      "a) Thần tốc, bất ngờ.",
-      "b) Vườn không nhà trống.",
-      "c) Tiên phát chế nhân.",
-      "d) Đóng cọc trên sông."
+      "A. mở các khoa thi.",
+      "B. bổ sung tầng lớp quý tộc.",
+      "C. Thải hồi những người già yếu.",
+      "D. Bổ sung những người khỏe mạnh."
     ],
-    correct: "a"
+    correct: "A"
   },
   {
-    question: "Câu 40: Câu nói: “Vua tôi đồng tâm, anh em hoà mục, cả nước góp sức, giặc phải bị bắt…” của Trần Quốc Tuấn đã đề cập đến nguyên nhân nào dẫn đến thắng lợi của quân dân nhà Trần?",
+    question: "Câu 20. Nội dung nào sau đây trong cuộc cải cách của Hồ Quý Ly diễn ra trên lĩnh vực kinh tế?",
     options: [
-      "a) Tính chính nghĩa của kháng chiến.",
-      "b) Kế sách đánh giặc đúng đắn.",
-      "c) Tinh thần đoàn kết của quân dân ta.",
-      "d) Kẻ địch gặp khó khăn."
+      "A. In và phát hành tiền giấy.",
+      "B. Đặt thêm các đơn vị hành chính.",
+      "C. Ban hành hình luật mới.",
+      "D. Thải hồi những binh sĩ già yếu."
     ],
-    correct: "c"
+    correct: "A"
   },
   {
-    question: "Câu 41: Trong xã hội nước ta dưới thời Bắc thuộc mâu thuẫn cơ bản trong xã hội nào sau đây là mâu thuẫn?",
+    question: "Câu 21. Một trong những công trình kiến trúc cuối thế kỉ XIV bằng đá độc đáo bậc nhất của Việt Nam và thế giới, được UNESCO ghi danh là",
     options: [
-      "a) Giữa giai cấp nông dân với địa chủ phong kiến.",
-      "b) Giữa nhân dân ta với chính quyền đô hộ phương Bắc.",
-      "c) Giữa quý tộc với chính quyền đô hộ phương Bắc.",
-      "d) Giữa nông dân với chính quyền đô hộ phương Bắc."
+      "A. Luỹ Trường Dực.",
+      "B. Luỹ Bán Bích.",
+      "C. Thành Nhà Hồ.",
+      "D. Kinh thành Huế."
     ],
-    correct: "b"
+    correct: "C"
   },
   {
-    question: "Câu 42: Năm 544, khởi nghĩa của Lí Bí thắng lợi. Sau khi lên làm vua, Lí Bí đặt quốc hiệu nước ta là?",
+    question: "Câu 22. Dưới triều Hồ, những tôn giáo nào bị suy giảm vai trò và vị trí so với các triều đại trước?",
     options: [
-      "a) Đại Việt.",
-      "b) Nam Việt.",
-      "c) Vạn Xuân.",
-      "d) Đại Cồ Việt."
+      "A. Nho giáo và đạo giáo.",
+      "B. Phật giáo và Đạo giáo.",
+      "C. Hin-đu giáo và Hồi giáo.",
+      "D. Đạo Thiên chúa và Phật giáo."
     ],
-    correct: "c"
+    correct: "B"
   },
   {
-    question: "Câu 43: Cuộc khởi nghĩa đầu tiên của nhân dân Âu Lạc chống lại ách đô hộ của phong kiến phương Bắc là?",
+    question: "Câu 23. Cuộc cải cách của vua Lê Thánh Tông được tiến hành trong bối cảnh lịch sử nào sau đây?",
     options: [
-      "a) Khởi nghĩa Bà Triệu.",
-      "b) Khởi nghĩa Lý Bí.",
-      "c) Khởi nghĩa Hai Bà Trưng.",
-      "d) Khởi nghĩa Phùng Hưng."
+      "A. Nội bộ triều đình có nhiều mâu thuẫn, biến động.",
+      "B. Nền kinh tế sa sút, nạn đói diễn ra thường xuyên.",
+      "C. Đất nước đứng trước nguy cơ bị nhà Minh xâm lược.",
+      "D. Chế độ phong kiến lâm vào khủng hoảng trầm trọng."
     ],
-    correct: "c"
+    correct: "A"
   },
   {
-    question: "Câu 44: Khởi nghĩa của Hai Bà Trưng đã đánh bại quân xâm lược nào sau đây?",
+    question: "Câu 24. Công cuộc cải cách của Lê Thánh Tông được tiến hành trên mọi lĩnh vực, nhưng tập trung chủ yếu vào lĩnh vực",
     options: [
-      "a) Nhà Hán.",
-      "b) Nhà Tùy.",
-      "c) Nhà Ngô.",
-      "d) Nhà Lương."
+      "A. kinh tế.",
+      "B. giáo dục.",
+      "C. hành chính.",
+      "D. văn hóa."
     ],
-    correct: "a"
+    correct: "C"
   },
   {
-    question: "Câu 45: Chiến thắng nào sau đây đã chấm dứt hoàn toàn thời kì một nghìn năm đô hộ của phong kiến phương Bắc đối với nước ta?",
+    question: "Câu 25. Để quản lý đất nước, vua Lê Thánh Tông đã cho ban hành bộ luật nào sau đây?",
     options: [
-      "a) Chiến thắng tại phòng tuyến sông Như Nguyệt.",
-      "b) Chiến thắng trên sông Bạch Đằng.",
-      "c) Chiến thắng Chi Lăng – Xương Giang.",
-      "d) Chiến thắng Ngọc Hồi – Đống Đa."
+      "A. Hình thư.",
+      "B. Quốc triều hình luật.",
+      "C. Hình luật.",
+      "D. Hoàng Việt luật lệ."
     ],
-    correct: "b"
+    correct: "B"
   },
   {
-    question: "Câu 46: Ai là người lãnh đạo thành công cuộc khởi nghĩa đánh đuổi quân xâm lược nhà Đường năm 722 và được nhân dân suy tôn là “Bố cái đại vương”?",
+    question: "Câu 26. Trong lĩnh vực văn hóa, Lê Thánh Tông đặc biệt đề cao hệ tư tưởng",
     options: [
-      "a) Mai Thúc Loan.",
-      "b) Phùng Hưng.",
-      "c) Bà Triệu.",
-      "d) Dương Đình Nghệ."
+      "A. Phật giáo.",
+      "B. Đạo giáo.",
+      "C. Nho giáo.",
+      "D. Thiên chúa giáo."
     ],
-    correct: "b"
+    correct: "C"
   },
   {
-    question: "Câu 47: “Tôi chỉ muốn cưỡi cơn gió mạnh, đạp luồng sóng dữ, chém cá kình ở biển Đông, đánh đuổi quân Ngô, giành lại giang san, cởi ách nô lệ, há chịu cúi đầu làm tì thiếp cho người ta!”. Câu nói trên là của nhân vật nào sau đây?",
+    question: "Câu 27. Ban cấp ruộng đất cho quý tộc, quan lại cao cấp từ nhất phẩm đến tứ phẩm là nội dung chủ yếu của chính sách cải cách nào sau đây của vua Lê Thánh Tông?",
     options: [
-      "a) Bà Triệu (Triệu Thị Trinh).",
-      "b) Bà Trưng Trắc.",
-      "c) Nữ tướng Bùi Thị Xuân.",
-      "d) Công chúa Lê Ngọc Hân."
+      "A. Quân điền.",
+      "B. Hạn điền.",
+      "C. Hạn nô.",
+      "D. Lộc điền."
     ],
-    correct: "a"
+    correct: "D"
   },
   {
-    question: "Câu 48: Hai Bà Trưng khởi nghĩa nhằm mục đích gì?",
+    question: "Câu 28. Một trong những điểm mới và tiến bộ của bộ luật Quốc triều hình luật là",
     options: [
-      "a) Trả thù cho Thi Sách.",
-      "b) Trả thù nhà, đền nợ nước.",
-      "c) Rửa hận.",
-      "d) Trả thù riêng."
+      "A. đề cao quyền tự do, dân chủ của nhân dân.",
+      "B. bảo vệ tuyệt đối quyền và lợi ích của vua.",
+      "C. bảo vệ quyền và lợi ích của quân cấm binh.",
+      "D. bảo vệ quyền lợi và địa vị của người phụ nữ."
     ],
-    correct: "b"
+    correct: "D"
   },
   {
-    question: "Câu 49: Bà Triệu có tên thật là gì?",
+    question: "Câu 29. 'Coi trọng biên soạn quốc sử' là nội dung cải cách của vua Lê Thánh Tông trên lĩnh vực nào sau đây?",
     options: [
-      "a) Triệu Thị Trinh.",
-      "b) Triệu Thiên Thư.",
-      "c) Triệu Thị Trang.",
-      "d) Triệu Thị Trắc."
+      "A. Quân đội.",
+      "B. Văn hóa.",
+      "C. Luật pháp.",
+      "D. Kinh tế."
     ],
-    correct: "a"
+    correct: "B"
   },
   {
-    question: "Câu 50: Năm 544, Lý Bí lên ngôi Hoàng đế, sử cũ gọi là?",
+    question: "Câu 30. Năm 1471, vua Lê Thánh Tông cho lập thêm đạo thừa tuyên thứ 13 có tên gọi là",
     options: [
-      "a) Lý Bắc Đế.",
-      "b) Lý Nam Đế.",
-      "c) Lý Đông Đế.",
-      "d) Lý Tây Đế."
+      "A. Hà Nội.",
+      "B. Phú Xuân.",
+      "C. Quảng Nam.",
+      "D. Tây Đô."
     ],
-    correct: "b"
+    correct: "C"
   },
   {
-    question: "Câu 51: Cuộc khởi nghĩa Hai Bà Trưng là cuộc khởi nghĩa thứ mấy trong thời Bắc thuộc?",
+    question: "Câu 31. Trong cuộc cải cách thế kỉ XV, dưới đạo thừa tuyên, vua Lê Thánh Tông thiết lập hệ thống",
     options: [
-      "a) Khởi nghĩa đầu tiên.",
-      "b) Khởi nghĩa thứ hai.",
-      "c) Khởi nghĩa thứ chín.",
-      "d) Khởi nghĩa cuối cùng."
+      "A. phủ, huyện/châu, xã.",
+      "B. tỉnh/thành phố, huyện, xã.",
+      "C. lộ, trấn, phủ, huyện/châu.",
+      "D. tỉnh, phủ, huyện, làng."
     ],
-    correct: "a"
+    correct: "A"
   },
   {
-    question: "Câu 52: Cuộc khởi nghĩa nào sau đây không nằm trong phong trào đấu tranh chống sự đô hộ của các triều đại phong kiến phương Bắc?",
+    question: "Câu 32. Dưới thời vua Lê Thánh Tông, hệ thống quan lại được tuyển chọn chủ yếu thông qua",
     options: [
-      "a) Khởi nghĩa Hai Bà Trưng.",
-      "b) Khởi nghĩa Lam Sơn.",
-      "c) Phong trào Tây Sơn.",
-      "d) Khởi nghĩa Phùng Hưng."
+      "A. dòng dõi tôn thất.",
+      "B. tiến cử.",
+      "C. giáo dục – khoa cử.",
+      "D. đề cử."
     ],
-    correct: "c"
+    correct: "C"
   },
   {
-    question: "Câu 53: Năm 40 - 43 là thời gian diễn ra cuộc khởi nghĩa nào của nhân dân ta thời Bắc thuộc?",
+    question: "Câu 33. Để tăng cường sức mạnh quân đội, trong cải cách của mình, vua Lê Thánh Tông đã",
     options: [
-      "a) Khởi nghĩa Bà Triệu.",
-      "b) Khởi nghĩa Lý Bí.",
-      "c) Khởi nghĩa Hai Bà Trưng.",
-      "d) Khởi nghĩa Phùng Hưng."
+      "A. Quy định chặt chẽ kỉ luật quân đội và huấn luyện, tập trận.",
+      "B. Thải hồi những binh sĩ già yếu, bổ sung người khỏe mạnh.",
+      "C. Tăng cường tuyển quân quy mô lớn, ồ ạt ở các địa phương.",
+      "D. Chú trọng cải tiến vũ khí, phòng thủ những nơi hiểm yếu."
     ],
-    correct: "c"
+    correct: "A"
   },
   {
-    question: "Câu 54: Năm 248, cuộc khởi nghĩa của Bà Triệu nhằm chống lại ách đô hộ của triều đại phong kiến phương Bắc nào?",
+    question: "Câu 34. Để tập trung quyền lực vào nhà vua, Lê Thánh Tông đã",
     options: [
-      "a) Nhà Hán.",
-      "b) Nhà Ngô.",
-      "c) Nhà Đường.",
-      "d) Nhà Minh."
+      "A. Bãi bỏ nhiều cơ quan, chức quan cũ.",
+      "B. Chú trọng đổi mới giáo dục khoa cử.",
+      "C. Ban hành chính sách hạn điền và hạn nô.",
+      "D. Coi trọng bảo vệ quyền lợi phụ nữ, trẻ em."
     ],
-    correct: "b"
+    correct: "A"
   },
   {
-    question: "Câu 55: Cuộc khởi nghĩa của Bà Triệu (năm 248) đã?",
+    question: "Câu 35. Cuộc cải cách hành chính lớn nhất của vương triều Nguyễn được tiến hành dưới thời vua",
     options: [
-      "a) Mở đầu cuộc đấu tranh giành độc lập của nhân dân ta thời Bắc thuộc.",
-      "b) Tiếp tục khẳng định sức mạnh và ý chí của phụ nữ Việt Nam.",
-      "c) Mở ra thời kì độc lập, tự chủ lâu dài trong lịch sử dân tộc.",
-      "d) Tạo cơ sở cho sự thắng lợi hoàn toàn của cuộc đấu tranh giành độc lập về sau."
+      "A. Gia Long.",
+      "B. Minh Mạng.",
+      "C. Tự Đức.",
+      "D. Thiệu Trị."
     ],
-    correct: "b"
+    correct: "B"
+  },
+  {
+    question: "Câu 36. Cuộc cải cách của vua Minh Mạng (nửa đầu thế kỉ XIX) được thực hiện trong bối cảnh lịch sử nào sau đây?",
+    options: [
+      "A. Chế độ quân chủ chuyên chế đang trong thời kì thịnh trị.",
+      "B. Phương thức sản xuất tư bản chủ nghĩa phát triển mạnh.",
+      "C. Bộ máy chính quyền nhà nước chưa hoàn thiện, đồng bộ.",
+      "D. Đất nước đứng trước nguy cơ xâm lược từ nhà Thanh."
+    ],
+    correct: "C"
+  },
+  {
+    question: "Câu 37. Cuộc cải cách của vua Minh Mạng (nửa đầu thế kỉ XIX) nhằm thực hiện một trong những mục đích nào sau đây?",
+    options: [
+      "A. Tập trung quyền lực vào tay vua.",
+      "B. Thúc đẩy kinh tế tư bản chủ nghĩa.",
+      "C. Ngăn ngừa nguy cơ giặc ngoại xâm.",
+      "D. Khôi phục nền giáo dục Nho học."
+    ],
+    correct: "A"
+  },
+  {
+    question: "Câu 38. Để hoàn thiện bộ máy chính quyền Trung ương, vua Minh Mạng đã cho thành lập một số cơ quan mới có tên là",
+    options: [
+      "A. Lục bộ, Lục khoa, Lục tự.",
+      "B. Đô ty, Thừa ty, Hiến ty.",
+      "C. Đô sát viện, Cơ mật viện.",
+      "D. Thông chính ty, Quốc Tử Giám."
+    ],
+    correct: "C"
+  },
+  {
+    question: "Câu 39. Cuộc cải cách của vua Minh Mạng (nửa đầu thế kỉ XIX) tập trung vào lĩnh vực chủ yếu nào sau đây?",
+    options: [
+      "A. Kinh tế.",
+      "B. Văn hóa.",
+      "C. Quốc phòng.",
+      "D. Hành chính."
+    ],
+    correct: "D"
+  },
+  {
+    question: "Câu 40. Trong cuộc cải cách nửa đầu thế kỉ XIX, vua Minh Mạng đã phân chia bộ máy chính quyền địa phương thành các cấp nào sau đây?",
+    options: [
+      "A. Đạo thừa tuyên, phủ, huyện/châu, xã.",
+      "B. Tỉnh/thành phố, huyện/châu, xã.",
+      "C. Lộ, trấn, phủ, huyện/châu, xã.",
+      "D. Tỉnh, phủ, huyện/châu, tổng, xã."
+    ],
+    correct: "D"
+  },
+  {
+    question: "Câu 41. Cuộc cải cách của vua Minh Mạng (nửa đầu thế kỉ XIX) được thực hiện trong bối cảnh",
+    options: [
+      "A. tình hình an ninh - xã hội ở nhiều địa phương bất ổn.",
+      "B. bộ máy nhà nước phong kiến cơ bản đã hoàn chỉnh.",
+      "C. tình trạng phân quyền, thiếu thống nhất đã khắc phục.",
+      "D. phương thức sản xuất tư bản chủ nghĩa thâm nhập mạnh."
+    ],
+    correct: "A"
+  },
+  {
+    question: "Câu 42. Trong công cuộc cải cách của vua Minh Mạng, Nội các được thành lập có vai trò nào sau đây?",
+    options: [
+      "A. Giúp vua khởi thảo các văn bản hành chính.",
+      "B. Kiểm tra, giám sát hoạt động của Lục bộ.",
+      "C. Phụ trách nhân khẩu, thu thuế trong cả nước.",
+      "D. Xướng danh những người đỗ trong kì thi Đình."
+    ],
+    correct: "A"
+  },
+  {
+    question: "Câu 43. Cuộc cải cách của vua Minh Mạng (nửa đầu thế kỉ XIX) có ý nghĩa quan trọng nào sau đây?",
+    options: [
+      "A. xóa bỏ tình trạng 'bế quan tỏa cảng' của đất nước.",
+      "B. ngăn chặn mọi nguy cơ xâm lược từ bên ngoài.",
+      "C. đặt cơ sở cho sự phân chia tỉnh, huyện hiện nay.",
+      "D. hoàn thành thống nhất đất nước về mặt lãnh thổ."
+    ],
+    correct: "C"
+  },
+  {
+    question: "Câu 44. Ở địa phương, trong công cuộc cải cách hành chính nửa đầu thế kỉ XIX, vua Minh Mạng đã chia cả nước thành",
+    options: [
+      "A. 30 tỉnh và 1 phủ Thừa Thiên.",
+      "B. Bắc Thành, Gia Định thành.",
+      "C. 13 đạo thừa tuyên và các phủ.",
+      "D. các lộ, trấn, phủ, huyện/châu."
+    ],
+    correct: "A"
+  },
+  {
+    question: "Câu 45. Công cuộc cải cách của vua Minh Mạng (nửa đầu thế kỉ XIX) đã đem lại một trong những kết quả nào sau đây?",
+    options: [
+      "A. Đưa đất nước phát triển lên chế độ tư bản chủ nghĩa.",
+      "B. Thúc đẩy bộ máy chính quyền các cấp hoạt động hiệu quả.",
+      "C. Góp phần mở cửa và hội nhập nền kinh tế khu vực.",
+      "D. Hoàn thành thống nhất đất nước về mặt lãnh thổ."
+    ],
+    correct: "B"
+  },
+  {
+    question: "Câu 46. Một trong những di sản lớn nhất trong cuộc cải cách của vua Minh Mạng (nửa đầu thế kỉ XIX) còn giá trị đến ngày nay là",
+    options: [
+      "A. cách thức tổ chức bộ máy nhà nước ở trung ương.",
+      "B. cách thức phân chia đơn vị hành chính cấp tỉnh.",
+      "C. tập trung cao độ quyền lực vào trong tay nhà vua.",
+      "D. ưu tiên bổ nhiệm quan lại là người ở địa phương."
+    ],
+    correct: "B"
   }
 ];
 
