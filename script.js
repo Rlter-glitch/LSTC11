@@ -461,7 +461,8 @@ const questions = [
   }
 ];
 
-const form = document.getElementById('quizForm');
+function loadQuiz() {
+  const form = document.getElementById('quizForm');
   questions.forEach((question, index) => {
     const questionDiv = document.createElement('div');
     questionDiv.classList.add('question');
@@ -475,7 +476,7 @@ const form = document.getElementById('quizForm');
       const input = document.createElement('input');
       input.type = 'radio';
       input.name = 'q' + (index + 1);
-      input.value = String.fromCharCode(97 + i); // 'a', 'b', 'c', 'd'
+      input.value = String.fromCharCode(65 + i); // 'A', 'B', 'C', 'D'
       label.appendChild(input);
       label.appendChild(document.createTextNode(option));
       questionDiv.appendChild(label);
@@ -486,7 +487,6 @@ const form = document.getElementById('quizForm');
   });
 }
 
-// Hàm tính điểm và hiển thị kết quả khi người dùng nộp bài
 function submitQuiz() {
   const form = document.getElementById('quizForm');
   const questionsDivs = form.querySelectorAll('.question');
@@ -496,7 +496,7 @@ function submitQuiz() {
     const selectedOption = questionDiv.querySelector('input[type="radio"]:checked');
     const correctAnswer = questions[index].correct;
 
-    if (selectedOption && selectedOption.value === correctAnswer) {
+    if (selectedOption && selectedOption.value.toUpperCase() === correctAnswer) {
       score++;
       questionDiv.classList.add('correct');
     } else {
@@ -508,5 +508,5 @@ function submitQuiz() {
   resultDiv.innerHTML = `Bạn đã trả lời đúng ${score} trên ${questions.length} câu.`;
 }
 
-// Gọi hàm loadQuiz để tạo câu hỏi khi trang được tải
-loadQuiz();
+// Gọi hàm khi trang tải xong
+window.onload = loadQuiz;
