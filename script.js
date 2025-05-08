@@ -458,7 +458,127 @@ const questions = [
       "D. ưu tiên bổ nhiệm quan lại là người ở địa phương."
     ],
     correct: "B"
-  }
+  },
+  {
+    question: "Câu 47. Các cuộc khởi nghĩa trong thời kỳ Bắc thuộc của nhân dân Việt Nam diễn ra trong bối cảnh nào?",
+    options: [
+      "A. Đất nước có độc lập, chủ quyền.",
+      "B. Đất nước mất độc lập, tự chủ.",
+      "C. Đất nước thống nhất, chủ quyền.",
+      "D. Nhân dân Việt Nam đã bị đồng hóa."
+    ],
+    correct: "B"
+  },
+  {
+    question: "Câu 48. Một trong những đóng góp quan trọng của phong trào Tây Sơn (1771-1802) là đã",
+    options: [
+      "A. lật đổ ách đô hộ và thống trị của nhà Minh.",
+      "B. hoàn thành thống nhất đất nước về mọi mặt.",
+      "C. bước đầu xóa bỏ tình trạng chia cắt đất nước.",
+      "D. xóa bỏ chế độ phong kiến, lập ra chế độ mới."
+    ],
+    correct: "B"
+  },
+  {
+    question: "Câu 49. Tư tưởng được vận dụng xuyên suốt trong khởi nghĩa Lam Sơn (1418-1427) là",
+    options: [
+      "A. trung quân.",
+      "B. cần vương.",
+      "C. bình đẳng.",
+      "D. nhân nghĩa."
+    ],
+    correct: "D"
+  },
+  {
+    question: "Câu 50. Sau khi lên làm vua, Lí Bí đặt quốc hiệu nước ta là",
+    options: [
+      "A. Đại Việt.",
+      "B. Nam Việt",
+      "C. Vạn Xuân.",
+      "D. Đại Cồ Việt."
+    ],
+    correct: "C"
+  },
+  {
+    question: "Câu 51. Cuộc khởi nghĩa đầu tiên của nhân dân Âu Lạc chống lại ách đô hộ của phong kiến phương Bắc là",
+    options: [
+      "A. khởi nghĩa Bà Triệu.",
+      "B. khởi nghĩa Lý Bí.",
+      "C. khởi nghĩa Hai Bà Trưng.",
+      "D. khởi nghĩa Phùng Hưng."
+    ],
+    correct: "C"
+  },
+  {
+    question: "Câu 52. “Tôi chỉ muốn cưỡi cơn gió mạnh, đạp luồng sóng dữ, chém cá kình ở biển Đông, đánh đuổi quân Ngô, giành lại giang san, cởi ách nô lệ, há chịu cúi đầu làm tì thiếp cho người ta!”. Câu nói trên là của nhân vật nào sau đây?",
+    options: [
+      "A. Bà Triệu (Triệu Thị Trinh).",
+      "B. Bà Trưng Trắc.",
+      "C. Nữ tướng Bùi Thị Xuân.",
+      "D. Công chúa Lê Ngọc Hân."
+    ],
+    correct: "A"
+  },
+  {
+    question: "Câu 53. Trong lĩnh vực quân đội và quốc phòng, Hồ Quý Ly và nhà Hồ thực hiện chính sách",
+    options: [
+      "A. tuyển chọn người giỏi võ nghệ làm tướng chỉ huy, không căn cứ vào nguồn gốc tôn thất như trước.",
+      "B. tuyển chọn những người giỏi chiến đấu làm tướng chỉ huy, không căn cứ vào quê quán như trước.",
+      "C. thải hồi người già yếu, bổ sung người có nguồn gốc tôn thất.",
+      "D. thải hồi người có nguồn gốc tôn thất, bổ sung người chiến đấu giỏi."
+    ],
+    correct: "A"
+  },
+  {
+    question: "Câu 54. Một trong những điểm mới của bộ Quốc triều hình luật là",
+    options: [
+      "A. có sự gia tăng hình phạt đối với người phạm tội nếu đã đến tuổi trưởng thành.",
+      "B. có sự phân biệt hình phạt đối với người phạm tội nếu tàn tật hoặc còn nhỏ.",
+      "C. đề cao quyền lợi và địa vị của nam giới, quy định cụ thể về tố tụng.",
+      "D. xóa bỏ hình phạt đối với người phạm tội nếu tàn tật hoặc còn nhỏ."
+    ],
+    correct: "B"
+  },
+  {
+    question: "Câu 55. Vua Lê Thánh Tông đã đề ra chính sách nào sau đây để thúc đẩy kinh tế nông nghiệp Đại Việt phát triển?",
+    options: [
+      "A. Chế độ quân điền.",
+      "B. Lễ cày tịch điền.",
+      "C. Cải cách điền địa.",
+      "D. Chính sách hạn điền."
+    ],
+    correct: "A"
+  },
+  {
+    question: "Câu 56. Một trong những điểm mới và tiến bộ của bộ luật Quốc triều hình luật là",
+    options: [
+      "A. đề cao quyền tự do, dân chủ của nhân dân.",
+      "B. bảo vệ tuyệt đối quyền và lợi ích của vua.",
+      "C. bảo vệ quyền và lợi ích của quân cấm binh.",
+      "D. bảo vệ quyền lợi và địa vị của người phụ nữ."
+    ],
+    correct: "D"
+  },
+  {
+    question: "Câu 57. Dưới thời vua Lê Thánh Tông, hệ thống cơ quan phụ trách đạo thừa tuyên có tên gọi là",
+    options: [
+      "A. Tam ty.",
+      "B. Lục bộ.",
+      "C. Lục khoa.",
+      "D. Thông chính ty"
+    ],
+    correct: "A"
+  },
+  {
+    question: "Câu 58. Ba cơ quan ở trung ương được thành lập mới từ sau cải cách của Minh Mạng là",
+    options: [
+      "A. Nội các, Hàn lâm viện, Cơ mật viện.",
+      "B. Đô sát viện, Cơ mật viện, Nội các viện.",
+      "C. Cơ mật viện, Nội các viện, Đô sát viện.",
+      "D. Nội các, Đô sát viện, Cơ mật viện."
+    ],
+    correct: "D"
+   }
 ];
 
 function loadQuiz() {
