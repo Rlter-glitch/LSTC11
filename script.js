@@ -477,7 +477,7 @@ const questions = [
       "bước đầu xóa bỏ tình trạng chia cắt đất nước.",
       "xóa bỏ chế độ phong kiến, lập ra chế độ mới."
     ],
-    correct: "B"
+    correct: "C"
   },
   {
     question: "Câu 49. Tư tưởng được vận dụng xuyên suốt trong khởi nghĩa Lam Sơn (1418-1427) là",
